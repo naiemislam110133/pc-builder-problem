@@ -56,6 +56,18 @@ document.getElementById("apply-btn").addEventListener("click", function(){
      const code = document.getElementById("promo-input").value;
       
      if(code === fakeCode){
-        
+        const total = document.getElementById("total-price");
+        let totalPrice = parseFloat(total.innerText);
+
+        const discount = (totalPrice*20)/100;
+
+         totalPrice = (totalPrice - discount).toFixed(2);
+         total.innerText = totalPrice;
+         
+
+
+     }
+     else{
+        alert('Sorry You Cannot advantage of discount');
      }
 })
