@@ -49,3 +49,13 @@ function updatePrice (itemID, price){
     const total = document.getElementById("total-price");
     total.innerText = totalPrice;
 }
+
+const fakeCode = "naIem";
+
+document.getElementById("apply-btn").addEventListener("click", function(){
+     const code = document.getElementById("promo-input").value;
+      
+     if(code === fakeCode){
+        
+     }
+})
